@@ -64,8 +64,10 @@ prediction =model.predict(input_data_scaled)
 
 prediction_proba = prediction[0][0]
 
-final_salary=st.write(f"SALARY REGRESSION MODEL: {prediction_proba:.2f*1000}")
-st.subheader('final_salary')
+final_salary=st.write(f"SALARY REGRESSION MODEL: {prediction_proba:.2f}")
+salary=final_salary*1000
+print("salary")
+
 
 
 
