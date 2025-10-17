@@ -67,7 +67,15 @@ st.subheader("Predicted Salary in USD")
 st.success(f"${prediction_salary:,.2f}")
 
 else:
-    st.info("Click the button above to see the predicted salary.")
+st.info("Click the button above to see the predicted salary.")
+
+
+
+
+
+
+
+
 
 
 
