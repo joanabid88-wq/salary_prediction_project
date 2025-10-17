@@ -65,6 +65,11 @@ if st.button(" Predict Salary"):
  prediction_salary = prediction_salary[0][0]
  st.success(f"Predicted Salary:${prediction_salary:,.2f}")
 
+if st.button("Show Input Summary"):
+    st.subheader("Your Input Data Summary:")
+    st.dataframe(input_data)
+
+
 
 
 
