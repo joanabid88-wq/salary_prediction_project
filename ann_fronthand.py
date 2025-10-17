@@ -66,7 +66,8 @@ prediction_proba = prediction[0][0]
 
 st.write(f"SALARY REGRESSION MODEL: {prediction_proba:.2f}")
 
-final_salary=prediction_proba*1000
+final_salary=prediction*1000
 st.subheader('Your salary is:')
 print('final_salary')
+
 
