@@ -6,7 +6,7 @@ import pandas as pd
 import pickle
 
 ## load the trained model
-model = tf.keras.models.load_model('salary_regression_model.keras')
+model = tf.keras.models.load_model('salary_regression_model.keras',compile=False)
 
 # Load the encoder and scaler
 
@@ -65,3 +65,4 @@ prediction_salary =model.predict(input_data_scaled)
 prediction_salary = prediction_salary[0][0]
 st.subheader("Predicted Salary in USD")
 st.success(f"${prediction_salary:,.2f}")
+
