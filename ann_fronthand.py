@@ -64,5 +64,6 @@ prediction_salary =model.predict(input_data_scaled)
 if st.button(" Predict Salary"):
  prediction_salary = prediction_salary[0][0]
 st.subheader("Predicted Salary in USD")
-st.subheader(f"${prediction_salary:,.2f}")
+st.subheader(f"Predicted Salary:${prediction_salary:,.2f}")
+
 
