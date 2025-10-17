@@ -60,13 +60,13 @@ input_data = pd.concat([input_data.reset_index(drop=True),geo_encoded_df],axis=1
 
 input_data_scaled = scaler.transform(input_data)
 
-prediction =model.predict(input_data_scaled)
+prediction_salary =model.predict(input_data_scaled)
 
-prediction_proba = prediction[0][0]
+prediction_salary = prediction[0][0]
+prediction_salary=  SALARY()
+print("SALARY")
 
-final_salary=st.write(f"SALARY REGRESSION MODEL: {prediction_proba:.2f}")
-salary=final_salary*1000
-print("salary")
+
 
 
 
