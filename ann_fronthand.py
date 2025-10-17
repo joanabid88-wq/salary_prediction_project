@@ -62,9 +62,10 @@ input_data_scaled = scaler.transform(input_data)
 
 prediction_salary =model.predict(input_data_scaled)
 
-prediction_salary = prediction[0][0]
-prediction_salary=  SALARY()
-print("SALARY")
+prediction_salary = prediction_salary[0][0]
+print(f"Predicted Salary: ${prediction_salary:,.2f}")
+
+
 
 
 
