@@ -61,8 +61,12 @@ input_data = pd.concat([input_data.reset_index(drop=True),geo_encoded_df],axis=1
 input_data_scaled = scaler.transform(input_data)
 
 prediction_salary =model.predict(input_data_scaled)
-
-prediction_salary = prediction_salary[0][0]
+if st.button(" Predict Salary"):
+ prediction_salary = prediction_salary[0][0]
 st.subheader("Predicted Salary in USD")
 st.success(f"${prediction_salary:,.2f}")
+else:
+    st.info("Click the button above to see the predicted salary.")
+
+
 
