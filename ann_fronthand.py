@@ -65,19 +65,3 @@ if st.button(" Predict Salary"):
  prediction_salary = prediction_salary[0][0]
 st.subheader("Predicted Salary in USD")
 st.success(f"${prediction_salary:,.2f}")
-else:
- st.info("Click the button above to see the predicted salary.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
