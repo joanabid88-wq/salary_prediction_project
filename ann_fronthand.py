@@ -63,16 +63,5 @@ input_data_scaled = scaler.transform(input_data)
 prediction_salary =model.predict(input_data_scaled)
 
 prediction_salary = prediction_salary[0][0]
-print(f"Predicted Salary: ${prediction_salary:,.2f}")
-print(prediction_salary)
-
-
-
-
-
-
-
-
-
-
-
+st.subheader("Predicted Salary in USD")
+st.success(f"${prediction_salary:,.2f}")
